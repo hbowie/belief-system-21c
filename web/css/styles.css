@@ -1,0 +1,264 @@
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  color: light-dark(black, white);
+  background-color: light-dark(#ececec, #1a151b);
+  font-family: heliotrope_3;
+  font-size: 16pt;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: hermes_maia_2;
+}
+img {
+	max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: light-dark(black, white)
+  border-bottom: 1px dotted;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: light-dark(black, white)
+}
+
+ul.beliefs-cloud {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5em;
+  font-family: hermes_maia_3_caps;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+ul.beliefs-cloud a {
+  text-decoration: none;
+  display: block; 
+  position: relative;
+  border-bottom: 0;
+  border-radius: 0.25rem; 
+  color: light-dark(white, black);
+  background-color: light-dark(#1a151b, #ececec);
+  padding: 1px 12px 1px 12px; 
+  margin: 10px 10px 10px 10px; 
+  min-width: 40px; 
+  text-align: center; 
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: left;
+  line-height: 2.5em;
+  font-family: hermes_maia_3_caps;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+nav ul a {
+  text-decoration: none;
+  display: block; 
+  position: relative;
+  border-bottom: 0;
+  border-radius: 0.25rem; 
+  color: light-dark(white, black);
+  background-color: light-dark(#1a151b, #ececec);
+  padding: 1px 12px 1px 12px; 
+  margin: 10px 10px 10px 10px; 
+  min-width: 40px; 
+  text-align: center; 
+}
+
+@font-face {
+font-family: heliotrope_3;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope_3_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope_3;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope_3_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope_3;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope_3_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope_3;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope_3_bold_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: hermes_maia_2;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/hermes_maia_2_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: hermes_maia_2;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/hermes_maia_2_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: hermes_maia_2;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/hermes_maia_2_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: hermes_maia_2;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/hermes_maia_2_bold_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: hermes_maia_2_caps;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/hermes_maia_2_caps_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: hermes_maia_2_caps;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/hermes_maia_2_caps_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: hermes_maia_3_caps;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/hermes_maia_3_caps_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: hermes_maia_3_caps;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/hermes_maia_3_caps_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: valkyrie_b;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/valkyrie_b_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: valkyrie_a;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/valkyrie_a_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: valkyrie_a;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/valkyrie_a_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: valkyrie_a;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/valkyrie_a_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: valkyrie_a;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/valkyrie_a_bold_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: valkyrie_b;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/valkyrie_b_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: valkyrie_b;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/valkyrie_b_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: valkyrie_b;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/valkyrie_b_bold_italic.woff2') format('woff2');
+}

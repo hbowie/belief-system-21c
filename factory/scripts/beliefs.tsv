@@ -1,0 +1,14 @@
+module	action	modifier	object	value
+input	set		xpltags	false
+input	set		dirdepth	1
+input	open	notenik-defined		#PATH#../../content/beliefs
+sort	clear			
+sort	add	ascending	Title	
+sort	set		params	
+template	webroot			#PATH#../../web
+template	open			#PATH#../../factory/templates/belief-template.html
+template	generate			
+template	open			#PATH#../../factory/templates/belief-list-template.html
+template	generate			
+template	open			#PATH#../../factory/templates/belief-redirect-template.html
+template	generate			
