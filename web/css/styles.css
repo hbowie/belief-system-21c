@@ -146,6 +146,62 @@ nav ul a {
   text-align: center; 
 }
 
+.section-name {
+  font-style: italic;
+  border-bottom: 2px solid;
+}
+
+p.section-name {
+  /* font-family: "triplicate_a", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-style: italic;
+  font-weight: 500;
+  margin-block-end: 0;
+}
+
+/* --------------------------------------------------
+
+  Block Quotes
+
+* -------------------------------------------------- */
+
+blockquote {
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    /* color: #383838; */
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #8b6854;
+}
+
+.quote-from {
+  margin-block-start: 0.1rem;
+  margin-block-end: 0.5rem;
+  margin: 0.1rem 0 0.5rem 0;
+  padding: 0.25rem 40px;
+  line-height: 1.45;
+  position: relative;
+  /* color: #383838; */
+}
+
+.quote-from:before {
+  display: block;
+  padding-left: 10px;
+  content: "\2014";
+  position: absolute;
+  left: 0;
+  /* color: #8b6854; */
+}
+
 @font-face {
 font-family: heliotrope_3;
 font-style: normal;

@@ -37,6 +37,8 @@
 		<main>
 			<article>
 				<section>
+					<p ><span class="section-name">Authors:</span></p>
+					
 					<h2>=$author$=</h2>
 <?if "=$author-info$=" ?>
 					<p>Brief Bio: =$author-info$=</p>
@@ -52,6 +54,10 @@
 						</a>
 					</p>	
 <?endif?>
+				</section>
+				<section>
+					<h3>Quotations</h3>
+<?include "../includes-gen/author-quotes/=$author&f$=.html" ?>
 				</section>
 			</article>
 		</main>

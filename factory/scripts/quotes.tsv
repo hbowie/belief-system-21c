@@ -1,0 +1,34 @@
+module	action	modifier	object	value
+input	set		xpltags	false
+input	set		dirdepth	1
+input	open	notenik-defined		#PATH#../../content/quotes
+sort	clear			
+sort	add	ascending	title	
+sort	set		params	
+template	webroot			#PATH#../../web
+template	open			#PATH#../../factory/templates/quote-page-template.html
+template	generate			
+sort	clear			
+sort	add	ascending	author	
+sort	add	ascending	date	
+sort	add	ascending	title	
+sort	set		params	
+template	webroot			#PATH#../../web
+template	open			#PATH#../../factory/templates/author-quotes-template.html
+template	generate			
+
+<!-- Explode Tags for Quotes -->
+
+input	set		xpltags	true
+input	set		dirdepth	1
+input	open	notenik-defined		#PATH#../../content/quotes
+filter	clear
+filter	add	ne	Tag	
+filter	set		params
+sort	clear
+sort	set		params
+sort	add	ascending	Tag
+sort	add	ascending	Title
+sort	set		params
+template	open			#PATH#../templates/belief-quotes-template.html
+template	generate
