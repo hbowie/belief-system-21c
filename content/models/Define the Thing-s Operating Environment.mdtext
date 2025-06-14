@@ -1,0 +1,19 @@
+Title:  Define the Thing's Operating Environment
+
+AKA:    operating environment
+
+Seq:    5.3
+
+Level:  3 - Element
+
+Entry Type: element
+
+Timestamp: 20230526195018
+
+Date Added: 2023-06-03 15:17:11 -0700
+
+Body:
+
+We must make assumptions/stipulations about a type of thing's operating environment in order to improve its [[function]]. 
+
+If an operating environment varies significantly from these assumptions, then the type of thing may no longer [[perform]] as desired.

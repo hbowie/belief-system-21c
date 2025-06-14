@@ -11,26 +11,38 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<title>
-			A Belief System for the 21st Century
+			A Belief System for the 21st century
 		</title>
 		<meta name="description" content="A Belief System for the 21st Century" />
 <?include "../includes/head-links.html" ?>
 	</head>
 	<body>
-		<header>
-			<h1>A Belief System for the 21st Century</h1>
-		</header>
+<?include "../includes/header.html" ?>
 		<nav></nav>
 		<main>
 			<section>
 				<!-- <h2>=$title$=</h2> -->
 				=$body&o$=
+				
+				<p>These beliefs can be organized in multiple ways for presentation.</p>
 			</section>
 			<section>
+				<h3>Alphabetized List</h3>
+				<p>Let's start with a simple alphabetized list.</p>
 <?include "../includes-gen/beliefs-list.html" ?>
 			</section>
+			<section>
+				<h3>Categorized</h3>
+				<p>But we can also organize them into broader categories.</p>
+<?include "../includes-gen/belief-categories/a-human-perspective.html" ?>
+<?include "../includes-gen/belief-categories/something-bigger-than-ourselves.html" ?>
+<?include "../includes-gen/belief-categories/a-sense-of-purpose.html" ?>
+<?include "../includes-gen/belief-categories/our-social-contract.html" ?>
+<?include "../includes-gen/belief-categories/rational-thought.html" ?>
+<?include "../includes-gen/belief-categories/some-guard-rails.html" ?>
+			</section>
 		</main>
-		<footer></footer>
+<?include "../includes/footer.html" ?>
 	</body>
 </html>
 <?loop?>

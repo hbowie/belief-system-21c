@@ -1,0 +1,16 @@
+Title:  Type Design Language
+
+Seq:    5.8
+
+Level:  3 - Element
+
+Entry Type: element
+
+Timestamp: 20230526200432
+
+Date Added: 2023-06-03 15:17:11 -0700
+
+Body:
+
+In order to make use of a [[type design]], there must first exist some language(s) that can be used to reliably and repeatably interpret such a set of instructions, in order to produce more instances of the [[type of thing]]. 
+

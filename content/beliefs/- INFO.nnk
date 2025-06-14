@@ -46,7 +46,7 @@ Note File Format: nnk
 
 Hash Tags: notenik-field
 
-Window Numbers: 1144.0;83.0;1016.0;898.0;337.0;
+Window Numbers: 1500.0;49.0;1016.0;898.0;337.0;
 
-Column Widths: title: 200, 240, 1500; date: 80, 120, 500; author: 100, 200, 1000; datemod: 100, 180, 250; tags: 50, 100, 1200; x: 12, 20, 50; dateadded: 100, 180, 250; statusdigit: 20, 30, 50; klass: 60, 80, 150; rank: 50, 80, 250; seq: 30, 80, 250; 
+Column Widths: rank: 50, 80, 250; date: 80, 120, 500; datemod: 100, 180, 250; dateadded: 100, 180, 250; x: 12, 20, 50; tags: 50, 100, 1200; klass: 60, 80, 150; title: 200, 240, 1500; statusdigit: 20, 30, 50; author: 100, 200, 1000; seq: 30, 80, 250; 
 
