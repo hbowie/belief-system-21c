@@ -1,5 +1,32 @@
 :root {
   color-scheme: light dark;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --heading-text: #344d6d;
+  --link-color: #0000F0;
+  --link-underline: #0000F0;
+  --subtle-link-color: #0000FF;
+  --link-visited-color: purple;
+  --link-active-color: red;
+  --button-bg: #255066;
+  --button-text: #ffffff;
+  --nav-bg: #265066;
+  --nav-text: #ffffff;
+  --highlighted-text: #000000;
+  
+  --dark-background-color: #253f51;
+  --dark-text-color: #ffffff;
+  --dark-heading-text: #ec9548;
+  --dark-link-color: #0000F0;
+  --dark-link-underline: #0000F0;
+  --dark-subtle-link-color: #0000FF;
+  --dark-link-visited-color: purple;
+  --dark-link-active-color: red;
+  --dark-button-bg: #ed9a62;
+  --dark-button-text: #253f51;
+  --dark-nav-bg: #ed9a62;
+  --dark-nav-text: #253f51;
+  --dark-highlighted-text: #ffffff;
 }
 
 html {
@@ -9,24 +36,61 @@ html {
 }
 
 body {
-  color: light-dark(black, white);
-  background-color: light-dark(#ececec, #1a151b);
+  color: light-dark(var(--text-color), var(--dark-text-color));
+  background-color: light-dark(var(--background-color), var(--dark-background-color));
   font-family: heliotrope_3;
   font-size: 16pt;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: hermes_maia_2;
+header {
+  text-align: center;
 }
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
+
+.float-left {
+  float: left;
+  padding: 0 20px 20px 0;
+}
+
+p {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+ul {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+/* --------------------------------------------------
+
+  Headings and Summaries
+
+* -------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: hermes_maia_2;
+  color: light-dark(var(--heading-text), var(--dark-heading-text));
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+summary {
+  font-family: hermes_maia_2;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  font-size: 18pt;
+  color: light-dark(var(--heading-text), var(--dark-heading-text));
+}
+
 a {
   text-decoration: none;
-  color: light-dark(black, white)
+  color: light-dark(var(--link-color), var(--dark-link-color))
   border-bottom: 1px dotted;
   border-bottom-width: 1px;
   border-bottom-style: dotted;
-  border-bottom-color: light-dark(black, white)
+  border-bottom-color: light-dark(var(--link-underline), var(--dark-link-underline))
 }
 
 a.implicit {
@@ -128,8 +192,8 @@ ul.beliefs-cloud a {
   position: relative;
   border-bottom: 0;
   border-radius: 0.25em; 
-  color: light-dark(white, black);
-  background-color: light-dark(#1a151b, #ececec);
+  color: light-dark(var(--button-text), var(--dark-button-text));
+  background-color: light-dark(var(--button-bg), var(--dark-button-bg));
   padding: 1px 12px 1px 12px; 
   margin: 10px 10px 10px 10px; 
   min-width: 40px; 
@@ -138,16 +202,16 @@ ul.beliefs-cloud a {
 
 a.belief-name {
   text-decoration: none;
+  text-align: center; 
   /* display: block; */
   /* position: relative;
   border-bottom: 0; */
-  color: light-dark(white, black);
-  background-color: light-dark(#1a151b, #ececec);
+  color: light-dark(var(--button-text), var(--dark-button-text));
+  background-color: light-dark(var(--button-bg), var(--dark-button-bg));
   border-radius: 0.25em; 
   padding: 1px 12px 1px 12px; 
   margin: 10px 10px 10px 0; 
-  /* min-width: 40px; */
-  text-align: center; 
+  min-width: 40px; 
 }
 
 /* --------------------------------------------------
@@ -175,10 +239,10 @@ nav ul a {
   position: relative;
   border-bottom: 0;
   border-radius: 0.25em; 
-  color: light-dark(white, black);
-  background-color: light-dark(#1a151b, #ececec);
+  color: light-dark(var(--nav-text), var(--dark-nav-text));
+  background-color: light-dark(var(--nav-bg), var(--dark-nav-bg));
   padding: 1px 12px 1px 12px; 
-  margin: 10px 10px 10px 10px; 
+  margin: 10px 20px 10px 0; 
   min-width: 40px; 
   text-align: center; 
 }
@@ -217,7 +281,7 @@ blockquote:before {
     position: absolute;
     left: -20px;
     top: -20px;
-    color: #8b6854;
+    color: light-dark(var(--highlighted-text), var(--dark-highlighted-text));
 }
 
 .quote-from {

@@ -27,19 +27,31 @@
 				<p>These beliefs can be organized in multiple ways for presentation.</p>
 			</section>
 			<section>
-				<h3>Alphabetized List</h3>
+				<details open="true">
+					<summary>Alphabetized List</summary
 				<p>Let's start with a simple alphabetized list.</p>
 <?include "../includes-gen/beliefs-list.html" ?>
+				</details>
 			</section>
 			<section>
-				<h3>Categorized</h3>
+				<details>
+				<summary>Categorized</summary>
 				<p>But we can also organize them into broader categories.</p>
 <?include "../includes-gen/belief-categories/a-human-perspective.html" ?>
+<?include "../includes-gen/belief-categories/value-of-individuals.html" ?>
 <?include "../includes-gen/belief-categories/something-bigger-than-ourselves.html" ?>
 <?include "../includes-gen/belief-categories/a-sense-of-purpose.html" ?>
 <?include "../includes-gen/belief-categories/our-social-contract.html" ?>
 <?include "../includes-gen/belief-categories/rational-thought.html" ?>
 <?include "../includes-gen/belief-categories/some-guard-rails.html" ?>
+				</details>
+			</section>
+			<section>
+				<details>
+				<summary>Stacked</summary>
+				<p>And we can also present them in a somewhat logical sequence, with the more foundational beliefs presented at the top. </p>
+<?include "../includes-gen/belief-stack.html" ?>
+				</details>
 			</section>
 		</main>
 <?include "../includes/footer.html" ?>

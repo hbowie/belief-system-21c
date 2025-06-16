@@ -11,4 +11,4 @@ script	include			works.tsv
 
 <!-- Open the Web Browser to the Home Page -->
 
-<!-- browse	open	url		http://localhost/~hbowie/belief-system-21c/web/ -->
+browse	open	url		http://localhost/~hbowie/belief-system-21c/web/ 

@@ -19,3 +19,9 @@ sort	add	ascending	Title
 sort	set		params	
 template	open			#PATH#../../factory/templates/belief-categories-template.html
 template	generate			
+sort	clear			
+sort	add	ascending	Seq	
+sort	add	ascending	Title	
+sort	set		params	
+template	open			#PATH#../../factory/templates/belief-stack-template.html
+template	generate			
