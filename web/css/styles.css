@@ -1,13 +1,14 @@
 :root {
   color-scheme: light dark;
-  --background-color: #ffffff;
-  --text-color: #000000;
+  --background-color: #fdfffd;
+  --text-color: #27486e;
   --heading-text: #344d6d;
-  --link-color: #0000F0;
-  --link-underline: #0000F0;
-  --subtle-link-color: #0000FF;
+  --link-color: #5785a9;
+  --link-underline: #5785a9;
+  --subtle-link-color: #4b799d;
   --link-visited-color: purple;
   --link-active-color: red;
+  --link-hover-background-color: #dfe5ec;
   --button-bg: #255066;
   --button-text: #ffffff;
   --nav-bg: #265066;
@@ -17,11 +18,12 @@
   --dark-background-color: #253f51;
   --dark-text-color: #ffffff;
   --dark-heading-text: #ec9548;
-  --dark-link-color: #0000F0;
-  --dark-link-underline: #0000F0;
+  --dark-link-color: #7fc4e5;
+  --dark-link-underline: #7fc4e5;
   --dark-subtle-link-color: #0000FF;
-  --dark-link-visited-color: purple;
-  --dark-link-active-color: red;
+  --dark-link-visited-color: #aa8aaa;
+  --dark-link-active-color: rgb(225, 110, 110);
+  --dark-link-hover-background-color: #4a6577;
   --dark-button-bg: #ed9a62;
   --dark-button-text: #253f51;
   --dark-nav-bg: #ed9a62;
@@ -88,13 +90,43 @@ summary {
   color: light-dark(var(--heading-text), var(--dark-heading-text));
 }
 
+/* --------------------------------------------------
+
+  Links
+
+* -------------------------------------------------- */
+
 a {
+  outline-color: transparent;
   text-decoration: none;
   color: light-dark(var(--link-color), var(--dark-link-color))
   border-bottom: 1px dotted;
   border-bottom-width: 1px;
   border-bottom-style: dotted;
   border-bottom-color: light-dark(var(--link-underline), var(--dark-link-underline))
+}
+
+a:link {
+  color: light-dark(var(--link-color), var(--dark-link-color))
+}
+
+a:visited {
+  color: light-dark(var(--link-visited-color), var(dark-link-visited-color))
+}
+
+a:focus {
+  text-decoration: none;
+  background: light-dark(var(--link-hover-background-color), var(--dark-link-hover-background-color));
+}
+
+a:hover {
+  text-decoration: none;
+  background: light-dark(var(--link-hover-background-color), var(--dark-link-hover-background-color));
+}
+
+a:active {
+  background: light-dark(var(--link-hover-background-color), var(--dark-link-hover-background-color));
+  color: light-dark(var(--link-active-color), var(--dark-link-active-color));
 }
 
 a.implicit {
@@ -218,6 +250,31 @@ a.belief-name {
   min-width: 40px; 
 }
 
+a.belief-name:link {
+  color: light-dark(var(--button-text), var(--dark-button-text));
+  background-color: light-dark(var(--button-bg), var(--dark-button-bg));
+}
+
+a.belief-name:visited {
+  color: light-dark(var(--button-text), var(--dark-button-text));
+  background-color: light-dark(var(--button-bg), var(--dark-button-bg));
+}
+
+a.belief-name:focus {
+  color: light-dark(var(--button-text), var(--dark-button-text));
+  background-color: light-dark(var(--button-bg), var(--dark-button-bg));
+}
+
+a.belief-name:hover {
+  color: light-dark(var(--button-text), var(--dark-button-text));
+  background-color: light-dark(var(--button-bg), var(--dark-button-bg));
+}
+
+a.belief-name:active {
+  color: light-dark(var(--button-text), var(--dark-button-text));
+  background-color: light-dark(var(--button-bg), var(--dark-button-bg));
+}
+
 /* --------------------------------------------------
 
   Navigation Links
@@ -249,6 +306,31 @@ nav ul a {
   margin: 10px 20px 10px 0; 
   min-width: 40px; 
   text-align: center; 
+}
+
+nav ul a:link {
+  color: light-dark(var(--nav-text), var(--dark-nav-text));
+  background-color: light-dark(var(--nav-bg), var(--dark-nav-bg));
+}
+
+nav ul a:visited {
+  color: light-dark(var(--nav-text), var(--dark-nav-text));
+  background-color: light-dark(var(--nav-bg), var(--dark-nav-bg));
+}
+
+nav ul a:focus {
+  color: light-dark(var(--nav-text), var(--dark-nav-text));
+  background-color: light-dark(var(--nav-bg), var(--dark-nav-bg));
+}
+
+nav ul a:hover {
+  color: light-dark(var(--nav-text), var(--dark-nav-text));
+  background-color: light-dark(var(--nav-bg), var(--dark-nav-bg));
+}
+
+nav ul a:active {
+  color: light-dark(var(--nav-text), var(--dark-nav-text));
+  background-color: light-dark(var(--nav-bg), var(--dark-nav-bg));
 }
 
 .section-name {

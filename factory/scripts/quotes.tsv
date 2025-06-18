@@ -28,6 +28,7 @@ filter	set		params
 sort	clear
 sort	set		params
 sort	add	ascending	Tag
+sort	add	descending	Importance
 sort	add	ascending	Title
 sort	set		params
 template	open			#PATH#../templates/belief-quotes-template.html

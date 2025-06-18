@@ -1,6 +1,7 @@
 <?nextrec?>
 <?definegroup 1 "=$tag$=" ?>
 <?ifendgroup 1 ?>
+<?include "../includes/footer-fair-use.html" ?>
 <?endif?>
 <?ifnewgroup 1 ?>
 <?output "../includes-gen/belief-quotes/=$tag&f$=.html" ?>
@@ -16,36 +17,14 @@
 			 =$body&o$=
 		 </blockquote>
 		 
-		<p class="quote-from">
-			<a href="../authors/=$author&f$=.html">
-				=$author&,$=</a>=$date&,$=
-<?if "=$knownworktitle$=" ?>
-				from =$the-work-type-slug$=
-<?if "=$worklink$=" ?>
-				<a href="=$worklink$=" class="ext-link" target="_blank" rel="noopener">
-<?endif?>
-<?if =$majorwork$= eq true ?>
-				<cite>=$work-title$=</cite>
-<?endif?>
-<?if =$majorwork$= ne true ?>
-				&ldquo;=$work-title$=&rdquo;
-<?endif?>
-<?if "=$worklink$=" ?>
-				</a>
-<?endif?>
-<?endif?>
-		</p>
+		 <p class="quote-from">=$author-work-slug-int-links$=</p>
  
-<?if "=$work-rights-slug$="?>
-			<p>=$work-rights-slug$=</p>
-<?endif?>
 		 <p>
 			 &#187;
 			 <a class="implicit" href="https://beliefsystem21c.org/quotes/=$title&f$=.html">
 				 Permalink for Quote
 			 </a>
 		 </p>
-<?include "../includes/footer-fair-use.html" ?>
 		 
 		 <hr />
 <?loop?>

@@ -5,6 +5,7 @@ module	action	modifier	object	value
 script	set		log-noise	quiet
 script	include			authors.tsv
 script	include			beliefs.tsv
+script	include			models.tsv
 script	include			static.tsv
 script	include			works.tsv
 
